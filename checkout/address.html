@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <style>
+ 
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+ }
+ body{
+   display:flex;
+   height:100vh;
+   justify-content: center;
+   align-items: center;
+ }
+ #form{
+   display:flex;
+   flex-direction: column;
+   gap:20px;
+ }
+
+    </style>
+</head>
+<body>
+    <form id="form">
+      <input id="location" type="text" placeholder="Enter Location">
+      <input  id="house" type="text" placeholder="House/Flat no.">
+      <input id="landmark" type="text" placeholder="Landmark">
+       <input id="sumbit" type="submit" value="submit" >
+    </form>
+</body>
+</html>
+<script>
+  var form=document.getElementById("form").addEventListener("submit",address)
+ var div=document.createElement(div)
+ 
+  function address(event){
+    div.innerText=null;
+    event.preventDefault()
+var location= document.getElementById("location").value
+var house=document.getElementById("house").value
+var landmark=document.getElementById("landmark").value
+
+div.append(location,house,landmark)
+
+document.body.append(div)
+  }
+  
+</script>
