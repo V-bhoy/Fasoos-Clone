@@ -1,0 +1,397 @@
+body{
+    background-color:#f4f4f5 ;
+}
+#main_p{
+    width: 75%;
+    height: 800px;
+    
+    margin: auto;
+    display: flex;
+    gap:2%
+}
+#payment{
+    width: 60%;
+    height: 100%;
+   
+   display: flex;
+    flex-flow: column;
+    gap:1%;
+   
+}
+#ord_d{
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+   
+    
+}
+#log_d{
+    width: 100%;
+    height: 14%;
+    background-color: white;
+    border-radius: 10px; 
+    
+}
+#add_d{
+    width: 100%;
+    height: 32%;
+    background-color: white;
+    border-radius: 10px;
+   
+
+}
+#pay_d{
+    width: 100%;
+    height: 47%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+#first{
+    display: flex;
+    height: 50%;
+    gap:2%;
+    margin: 1%;
+    margin-top: 20px;
+}
+#log_d>div:nth-child(2){
+    margin-left: 11%;
+}
+#add_box{
+    border: 3px dashed goldenrod;
+    height: 60%;
+    width: 50%;
+    margin-top: -8%;
+    margin-left: 11%;
+}
+#add_box>p{
+    text-align: center;
+    font-size: larger;
+    margin-top: 20px;
+
+}
+#add_box>button{
+    margin-left: 38%;
+    margin-top: 5%;
+    padding: 2% 5%;
+    background-color: gold;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+#pay_box{
+   
+    width: 88%;
+    height: 75%;
+    margin-top: -15%;
+    margin-left: 11%;
+    display: flex;
+    gap:2%;
+    
+}
+#pay_box>div:nth-child(1){
+   
+    width: 35%;
+    background-color:#f4f4f5 ;
+    border-radius: 10px;
+
+
+}
+#pay_box>div:nth-child(2){
+    
+    width: 64%;
+
+
+}
+#pay_box>div>div{
+    margin-left: 4%;
+    font-size: large;
+   
+}
+#first1{
+   
+        display: flex;
+        height: 50%;
+        gap:4%;   
+  
+}
+#card_box{
+    border: 3px dashed gray;
+    height: auto;
+    width: 90%;
+    margin-top: -15%;
+    margin-left: 11%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#card_box>button{
+
+    padding: 8px;
+    margin-left: 8%;
+    margin-top: 5%;
+    background-color: gray;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+#card_box>p{
+    
+    margin-top:5%;
+    margin-left:8%;
+    margin-bottom: 20px;
+
+}
+#first1>:nth-child(2)>img{
+    margin-top: -15px;
+}
+#first1>:nth-child(1)>p{
+    margin-top: 15px;
+}
+
+/* payemet form css */
+
+
+#form{
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap:15px;
+    
+}
+#form>input{
+    
+    height:40px ;
+}
+.join{
+    display: flex;
+    gap:10px;
+}
+#month,#cvv,#pay{
+    height: 40px;
+}
+#back{
+    border-style: none;
+    background-color: white;
+}
+
+#btn_0{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:15px ;
+  
+}
+#btn_0>button{
+    padding: 12px 25px;
+    border-radius:25px ;
+    background-color: white;
+}
+#btn_0>button:hover{
+    background-color: blue;
+}
+#div_margin{
+    margin-left: 15%;
+    margin-top: -10%;
+}
+@media all and (min-width:0px) and (max-width:420px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #sm{
+        font-weight: 700;
+        font-size: medium;
+        margin-left: -75%;
+    }
+    body{
+        background-color:#f4f4f5 ;
+    }
+    #main_p{
+        width: 100%;
+        height: auto;
+        
+        margin: auto;
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 10px;
+    }
+    
+    #payment{
+        width: 100%;
+        height: auto;
+       
+       display: flex;
+        flex-flow: column;
+        margin-bottom: 20px;
+       
+       
+    }
+    #ord_d{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
+       
+        
+    }
+    #log_d{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px; 
+        
+    }
+    #one{
+        width: 30%;
+
+    }
+    #add_d{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+    
+    }
+    #to{
+        width: 40%;
+    }
+    #pay_d{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        
+    }
+    #first{
+        display: flex;
+        height: auto;
+      
+    }
+    
+    #add_box{
+        border: 3px dashed goldenrod;
+        height: auto;
+        width: 70%;
+       
+        
+    }
+    #add_box>p{
+        text-align: center;
+        font-size: larger;
+        margin-top: 20px;
+    
+    }
+    #add_box>button{
+      
+        background-color: gold;
+        border-style: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    
+    }
+    #th{
+        width: 30%;
+    }
+    #pay_box{
+       
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;  
+    }
+    #pay_box>div:nth-child(1){
+       
+        width: 100%;
+        background-color:#f4f4f5 ;
+        border-radius: 10px;
+    
+    
+    }
+    #pay_box>div:nth-child(2){
+        
+        width: 80%;
+        height: auto;
+    
+    
+    }
+    #pay_box>div>div{
+        margin-left: 4%;
+        font-size: large;
+       
+    }
+    #first1{
+       
+            display: flex;
+            height: auto;
+            gap:4%;   
+      
+    }
+    #card_box{
+        border: 3px dashed gray;
+        height: auto;
+        width: 100%;
+       
+      
+        border-radius: 10px;
+    }
+    #card_box>button{
+    
+        padding: 8px;
+        margin-left: 8%;
+        margin-top: 5%;
+        background-color: gray;
+        color: white;
+        border-style: none;
+        border-radius: 5px;
+    }
+   
+   
+    
+    /* payemet form css */
+    
+    
+    #form{
+    
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap:15px;
+        
+    }
+    #form>input{
+        
+        height:40px ;
+    }
+   
+    #month,#cvv,#pay{
+        height: 40px;
+    }
+    #back{
+        border-style: none;
+        background-color: white;
+    }
+    
+    #btn_0{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:15px ;
+      
+    }
+    #btn_0>button{
+        padding: 12px 25px;
+        border-radius:25px ;
+        background-color: white;
+    }
+    #btn_0>button:hover{
+        background-color: blue;
+    }
+    #div_margin{
+        margin-left: 15%;
+        margin-top: -10%;
+    }
+
+}
