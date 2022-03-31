@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #wrapped{
+            background-color: rgb(221, 241, 235);
+          height:100px;
+            margin:auto;
+             display:flex;
+             margin-bottom: 14px;
+        }
+        img{
+            height:35px;
+            width: 35px;
+            margin-top: 15px;;
+        }
+        #wrapped h3{
+         margin:0px;
+         
+        }
+        #wrapped p{
+           margin-top: 0cm;
+           
+        }
+        #price{
+            height:80px;
+            width:100%;
+            border: 1px dotted blueviolet;
+            margin-bottom: 14px;
+
+        }
+        #credit{
+            height:120px;
+            width:100%;
+            border: 1px dotted rgb(255, 0, 0);
+            margin-bottom: 14px;
+        }
+        #coupon{
+            height:80px;
+            width:100%;
+            border: 1px dotted rgba(69, 70, 67, 0.397);
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;  
+        }
+        #coupon>div{
+            display:flex;
+        }
+        #total>div{
+            display:flex;
+            justify-content: space-between;
+        }
+        #free{
+            color: rgb(16, 231, 16);
+        }
+        hr{
+            border: 1px solid black;
+            background-color: black;
+           
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="log">
+            <div id="loggedin">
+                
+                <h2>Logged In</h2>
+                <h2 id="form"></h2>
+            </div>
+            <div id="address">
+                <h1>Delivery Address</h1>
+                <div> 
+                    <h2>ADD NEW ADDRESS</h2>
+                    <button id="addnew">ADD NEW</button>
+                </div>
+            </div>
+            <div id="payment">
+                <h2>Payment</h2>
+            </div>
+        </div>
+        <div id="summary">
+      <h2>Order Summary</h2>
+      <div id="wrapped">
+         
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8IV8VW3Viimoem2ndbDr3jQ7yz6i_LLFfSvQNegOsZ8RhabxU" >
+            <div>
+                
+          <h3>Get wrapped with EatSure promise!</h3>
+          <p>Track your order, get safety updates & BeSure about your Faasos wraps with eat sure</p>
+        </div>
+        </div>
+      <div id="price">
+
+           </div>
+      <div id="credit">
+          <p>You can either apply coupon or credits</p>
+        
+      </div>
+      <div id="coupon">
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/679/679837.png" >
+            <h4 >APPLY COUPON</h4>
+          </div>
+       
+          <h4 >
+            View All Coupons </h4>
+
+      </div>
+      <div id="total">
+          <div>
+            <p>Cart Amount</p>
+            <p id="amount">500</p>
+          </div>
+          <div>
+            <p>Tax</p>
+            <p id="tax">50</p>
+          </div>
+          <div>
+            <p>Delivery</p>
+            <p id="free">Free</p>
+          </div>
+          <hr>
+          <div>
+            <h2>Grand Total</h2>
+            <h2 id="total">550</h2>
+          </div>
+          
+         
+          
+      
+          
+      </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var addnew=document.getElementById("addnew").addEventListener("click",function(){
+        window.location.href="./address.html"
+    })
+
+   
+</script>
