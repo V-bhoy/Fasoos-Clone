@@ -51,9 +51,19 @@
         #coupon>div{
             display:flex;
         }
-      hr{
-         bold
-      }
+        #total>div{
+            display:flex;
+            justify-content: space-between;
+        }
+        #free{
+            color: rgb(16, 231, 16);
+        }
+        hr{
+            border: 1px solid black;
+            background-color: black;
+           
+        }
+      
        
     </style>
 </head>
@@ -105,11 +115,28 @@
 
       </div>
       <div id="total">
-          <p>Cart Amount</p>
-          <p>Tax</p>
-          <p>Delivery</p>
-          <hr >
-          <h2>Grand Total</h2>
+          <div>
+            <p>Cart Amount</p>
+            <p id="amount">500</p>
+          </div>
+          <div>
+            <p>Tax</p>
+            <p id="tax">50</p>
+          </div>
+          <div>
+            <p>Delivery</p>
+            <p id="free">Free</p>
+          </div>
+          <hr>
+          <div>
+            <h2>Grand Total</h2>
+            <h2 id="total">550</h2>
+          </div>
+          
+         
+          
+      
+          
       </div>
     </div>
 </div>
