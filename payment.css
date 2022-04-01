@@ -13,19 +13,15 @@ body{
     width: 60%;
     height: 100%;
    
-   display: flex;
+    display: flex;
     flex-flow: column;
     gap:1%;
    
 }
-#ord_d{
-    width: 35%;
-    height: 80%;
+#sumary{
     background-color: white;
-    border-radius: 10px;
-   
-    
 }
+
 #log_d{
     width: 100%;
     height: 14%;
@@ -85,7 +81,7 @@ body{
    
     width: 88%;
     height: 75%;
-    margin-top: -15%;
+    margin-top: -25%;
     margin-left: 11%;
     display: flex;
     gap:2%;

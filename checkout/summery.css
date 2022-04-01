@@ -1,0 +1,78 @@
+#wrapped{
+    background-color: rgb(221, 241, 235);
+  height:100px;
+    margin:auto;
+     display:flex;
+     margin-bottom: 14px;
+}
+.myimg{
+    height:35px;
+    width:35px;
+    margin-top:15px;
+
+}
+#wrapped h3{
+ margin:0px;
+ 
+}
+#wrapped p{
+   margin-top: 0cm;
+   
+}
+#price{
+    height:80px;
+   
+    border: 1px dotted blueviolet;
+    margin-bottom: 14px;
+
+}
+#credit{
+    height:120px;
+   
+    border: 1px dotted rgb(255, 0, 0);
+    margin-bottom: 14px;
+}
+#coupon{
+    height:80px;
+   
+    border: 1px dotted rgba(69, 70, 67, 0.397);
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;  
+}
+#coupon>div{
+    display:flex;
+}
+#total>div{
+    display:flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#free{
+    color: rgb(16, 231, 16);
+}
+hr{
+    border: 1px solid black;
+    background-color: black;
+   
+}
+#total>div>p{
+   margin-bottom: 20px;
+}
+
+#summary{
+ 
+        border-radius: 10px;
+        padding:10px;
+       
+       
+        height: auto;
+        background-color: rgb(255, 7, 7);
+        border-radius: 10px;
+       
+}
+#coupon h4{
+    margin-top: 20px;
+}
+  
+  
