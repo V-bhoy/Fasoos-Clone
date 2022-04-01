@@ -87,6 +87,39 @@
         font-weight: bold;
         color: rgb(56, 56, 56);
       }
+
+      #profile_details_data {
+        display: grid;
+        /* border: 1px solid green; */
+        width: 80%;
+        margin: auto;
+        display: flex;
+      }
+      #profile_pic_container {
+        height: 342px;
+        width: 216px;
+        /* border: 1px solid black; */
+        text-align: center;
+      }
+      #inner_profile {
+        /* border: 1px solid teal; */
+        width: 100%;
+      }
+      #inner_profile > div {
+        /* border: 1px solid red; */
+        padding-left: 10px;
+        line-height: 5px;
+        justify-content: center;
+      }
+      #phoneno {
+        margin-top: 50px;
+      }
+      #email {
+        margin-top: 50px;
+      }
+      p {
+        color: rgb(102, 102, 102);
+      }
     </style>
   </head>
   <body>
@@ -117,5 +150,25 @@
     </div>
 
     <div id="manageprofile">Manage Profile</div>
+
+    <div id="profile_details_data">
+      <div id="profile_pic_container">
+        <img src="./pics/logodivimp.png" alt="logo" />
+      </div>
+      <div id="inner_profile">
+        <div id="name">
+          <p>Title</p>
+          <h4>ANKIT</h4>
+        </div>
+        <div id="phoneno">
+          <p>Phone No.</p>
+          <h4>9984746267</h4>
+        </div>
+        <div id="email">
+          <p>Email</p>
+          <h4>overchatak@gmail.com</h4>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
