@@ -4,6 +4,8 @@
     margin:auto;
      display:flex;
      margin-bottom: 14px;
+    padding-top: 10px;
+    line-height: 20px;
 }
 .myimg{
     height:35px;
@@ -22,15 +24,17 @@
 #price{
     height:80px;
    
-    border: 1px dotted blueviolet;
+    
     margin-bottom: 14px;
 
 }
 #credit{
     height:120px;
    
-    border: 1px dotted rgb(255, 0, 0);
+   
     margin-bottom: 14px;
+   
+    line-height: 38px;
 }
 #coupon{
     height:80px;

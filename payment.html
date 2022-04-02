@@ -7,10 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link rel="stylesheet" href="./components/main.css">
     <link rel="stylesheet" href="./checkout/summery.css">
-    <link rel="stylesheet" href="./style/navigation.css">
     <style>
         body {font-family: Arial, Helvetica, sans-serif;}
         * {box-sizing: border-box;}
@@ -77,12 +75,45 @@
         .form-container .btn:hover, .open-button:hover {
           opacity: 1;
         }
+       #price{
+           display:flex;
+           justify-content: space-around;
+           padding-top: 19px;
+       }
+       #price p{
+    padding-top: 10px;
+       }
+        
+        .butt {
+   border: 3px outset orange;
+   background-color: white;
+   height:40px;
+   width:40px;
+   cursor:pointer;
+   margin-bottom: 8px;
+   font-size: 34px;
+}
+
+.butt:hover {
+   background-color: rgb(91, 209, 12);
+   color:white;
+}
+#credit img{
+    height: 40px;
+
+}
+#credit>div{
+    display: flex;
+    gap:8px;
+    color: rgb(255, 0, 0);
+}
+#credit p{
+  padding-left: 19px;;
+}
+       
         </style>
 </head>
 <body>
-    <div id="main-index">
-
-    </div>
     <div id="main_p">
         <div id="payment">
             <div id="log_d">
@@ -236,10 +267,23 @@
               </div>
               </div>
             <div id="price">
-      
+                
+                    <p id="pname"></p>
+               
+                    <button class="butt" id="minus">-</button>
+                    <p id="qty">1</p>
+                    <button class="butt" id="add">+</button>
+                    <p id="qtyprice"></p>
+                
+               
                  </div>
             <div id="credit">
                 <p>You can either apply coupon or credits</p>
+                <div>
+                    <img src="https://w7.pngwing.com/pngs/423/371/png-transparent-discounts-and-allowances-computer-icons-coupon-sale-miscellaneous-text-logo.png">
+                    <h2>FAASOS CREDITS</h2>
+                </div>
+                <p>Click to Apply 0 Credits</p>
               
             </div>
             <div id="coupon">
@@ -255,7 +299,7 @@
             <div id="total">
                 <div>
                   <p>Cart Amount</p>
-                  <p id="amount">500</p>
+                  <p id="amount"></p>
                 </div>
                 <div>
                   <p>Tax</p>
@@ -268,7 +312,7 @@
                 <hr>
                 <div>
                   <h2>Grand Total</h2>
-                  <h2 id="total">550</h2>
+                  <h2 id="totalmoney">550</h2>
 
         </div>
 
@@ -280,18 +324,42 @@
     
 </body>
 </html>
-
-<script src="./script/header.js">
-
-
-</script>
-<script src="./script/navigation.js">
-
-</script>
 <script type="module">
     import footer from "./components/comp.js"
     let foot = document.getElementById("main-footer")
     foot.innerHTML = footer();
+
+   var local=JSON.parse(localStorage.getItem("cartItems"))
+   console.log(local)
+   var name=document.getElementById("pname").innerText=local[0].name
+   var pr=document.getElementById("qtyprice").innerText=local[0].price
+   document.getElementById("amount").innerText=local[0].price
+   document.getElementById("totalmoney").innerText=pr+50
+
+   document.getElementById("add").addEventListener("click",addfunction)
+   document.getElementById("minus").addEventListener("click",minusfunction)
+
+
+   var qty=document.getElementById("qty").innerText = 1
+   var bag=qty
+   console.log("bag",bag)
+   function addfunction(){
+    
+      bag= bag + 1
+      var qty=document.getElementById("qty").innerText = bag
+      document.getElementById("amount").innerText=local[0].price*bag
+      document.getElementById("totalmoney").innerText=(pr*bag)+50
+      console.log("bagww",bag)
+   }
+   function minusfunction(){
+    
+    bag= bag -1 
+    var qty=document.getElementById("qty").innerText = bag
+    document.getElementById("amount").innerText=local[0].price*bag
+    document.getElementById("totalmoney").innerText=(pr*bag)+50
+    console.log("bagww",bag)
+ }
+  
 
 </script>
 <script src="payment.js"></script>
