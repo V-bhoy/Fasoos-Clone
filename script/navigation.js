@@ -4,11 +4,32 @@ let user=document.querySelector("#username");
 let logout=document.querySelector("#lout");
 let loop=document.querySelector("#locate>p");
 let str=localStorage.getItem("location");
+let page=document.querySelector("#main-login");
+let page1=document.querySelector("#main");
+let sign=document.querySelector("#sign");
+let log=document.querySelector("#log");
 loop.innerText=str;
 user.addEventListener("click",function(){
-    let res=user.innerText.replace(user.innerText,"vaishu");
-    user.innerText=res;
+    page.style.display="block";
 })
+sign.addEventListener("click",function(){
+    page1.style.display="block";
+})
+log.addEventListener("click",function(){
+    page.style.display="block";
+})
+window.addEventListener("mouseup",function(event){
+    if(event.target!=page && event.target.parentNode!=page){
+        page.style.display="none";
+    }
+    if(event.target!=page1 && event.target.parentNode!=page1){
+        page1.style.display="none";
+    }
+});
+// user.addEventListener("click",function(){
+//     let res=user.innerText.replace(user.innerText,"vaishu");
+//     user.innerText=res;
+// })
 closetag.addEventListener("click",function(){
     let sidebar= document.querySelector("#sidebar");
     sidebar.style.display="none";

@@ -7,9 +7,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./styles/sign-up.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <script src="https://kit.fontawesome.com/333ad22e58.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="main-login" style="display: none; position: absolute;">
+        <form id="form">
+            <h1>Login</h1>
+            <p>Enter your phone number to continue</p>
+            <div id="loginCountryCode">
+            <select id="loginCountries" name="countries">
+                <option value="INDIA">+91</option>
+                <option value="USA">+973</option>
+                <option value="NEW">+93</option>
+                <option value="INDIA">+355</option>
+                <option value="USA">+213</option>
+                <option value="NEW">+1 684</option>
+                <option value="INDIA">+376</option>
+                <option value="USA">+244</option>
+                <option value="NEW">+1 264</option>
+                <option value="NEW">+672</option>
+            </select>
+            <input type="number" placeholder="Phone number" id="loginPhone">
+            </div>
+            <br>
+            <!-- <button id="loginButton">CONTINUE</button> -->
+            <input type="submit" id="loginButton" value="CONTINUE">
+            <p id="loginAlready">Don’t have an account? <a href="#" id="sign">Sign up </a></p>
+        </form>
+
+    </div>
+    <div id="main" style="display: none; position: absolute;">
+        <form id="form">
+            <h1>Sign Up</h1>
+            <p>Create a account with new phone number</p>
+            <div id="signupCountryCode">
+            <select id="signupCountries" name="countries">
+                <option value="INDIA">+91</option>
+                <option value="USA">+973</option>
+                <option value="NEW">+93</option>
+                <option value="INDIA">+355</option>
+                <option value="USA">+213</option>
+                <option value="NEW">+1 684</option>
+                <option value="INDIA">+376</option>
+                <option value="USA">+244</option>
+                <option value="NEW">+1 264</option>
+                <option value="NEW">+672</option>
+
+            </select>
+            <input type="number" placeholder="Phone number" id="signupPhone">
+            </div>
+            <br>
+            <input type="text"  id="signupName" placeholder="Name">
+            <br>
+            <input type="email" id="signupEmail" placeholder="Email Address">
+            <br>
+            <!-- <button:submit >CREATE ACCOUNT</button:submit> -->
+            <!-- <button type="submit"  id ="signupButton" >CREATE ACCOUNT</button> -->
+            <input type="submit" id ="signupButton" value="CREATE ACCOUNT">
+            <p id="signupTermCondition">By creating an account, I accept the <a href="">Terms & Conditions</a></p>
+    
+            <p id="signupAlready">Already have an account? <a href="#" id="log">Log in</a></p>
+        </form>
+
+    </div>
     <div id="father">
         <div id="son01">
             <img src="https://assets.faasos.io/faasos_v2/brandPattern.png" alt="background img">
@@ -53,6 +115,8 @@
     <footer id="main-footer"></footer>
 </body>
 </html>
+<script src="./scripts/sign-up.js"></script>
+<script src="./scripts/login.js"></script>
 <script src="./script/index.js"></script>
 <script type="module">
     import footer from "./components/comp.js"

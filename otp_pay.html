@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #hi{
+            padding-top: 20px;
+            text-align: center;
+        }
+        #hi1{
+            display: flex;
+            width: 15%;
+            margin: auto;
+            gap:2%;
+           
+        }
+        #hi12{
+            background-color: grey;
+        }
+        #hi0{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-bottom: 20px;
+        }
+        #hi1>input:last-child{
+            background-color: red;
+            padding: 10px 20px;
+            color: white;
+        }
+        span{
+            color: red;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    
+    <div id="hi12">
+        <p id="hi">Enter otp sent to your Mobile Number xxxxxxx9001</p>
+        <br>
+        <form>
+        <div id="hi1">
+            <input type="text" id="otp">
+            <input type="submit" ,id="submit">
+           
+        </div>
+        <br>
+        <br>
+       <center><a href="otp.html">Resend OTP</a></center> 
+       <div id="hi0">
+           <p>Page will expire in <span id="count"></span> Second,s</p>
+           <a href="">cancel this Transaction</a>
+       </div>
+    </form>
+    </div>
+
+    
+</body>
+</html>
+<script src="otp.js">
+    
+    
+
+</script>
