@@ -8,6 +8,7 @@
     <style>
       body {
         font-family: sans-serif;
+        background-color: #f5f5f6;
       }
       #profile_details_container {
         background-color: #e9cb00;
@@ -30,15 +31,13 @@
         height: 100%;
         width: 50%;
       }
-      logodiv {
+      #logodiv {
         width: 20%;
-        overflow: hidden;
-        box-sizing: border-box;
       }
       #logodiv > img {
-        height: 70px;
-        width: 70px;
-        padding-left: 150px;
+        height: 80px;
+        width: 80px;
+        padding-left: 220px;
         padding-top: 50px;
       }
       #profile_details {
@@ -80,6 +79,19 @@
       #line3 {
         background-color: blue;
       }
+      #profile_details_data {
+        /* border: 1px solid green; */
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+      #btn {
+        width: 110px;
+        height: 32px;
+        background-color: #e3df00;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
     </style>
   </head>
   <body>
@@ -108,5 +120,21 @@
       <div id="line3"></div>
       <div id="line4"></div>
     </div>
+    <div id="profile_details_data">
+      <div>
+        <img src="./pics/pilate.png" alt="logo" />
+      </div>
+      <div>
+        <p style="color: black">Looks bland, add some deliciousness</p>
+      </div>
+      <div>
+        <button id="btn" onclick="gotohome()">ORDER NOW</button>
+      </div>
+    </div>
   </body>
 </html>
+<script>
+  const gotohome = () => {
+    window.location.href = ".index.html";
+  };
+</script>
