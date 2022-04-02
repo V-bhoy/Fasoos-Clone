@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+  <link rel="stylesheet" href="./styles/sign-up.css">
+</head>
+<body>
+    <div id="main">
+        <form id="form">
+            <h1>Sign Up</h1>
+            <p>Create a account with new phone number</p>
+            <div id="signupCountryCode">
+            <select id="signupCountries" name="countries">
+                <option value="INDIA">+91</option>
+                <option value="USA">+973</option>
+                <option value="NEW">+93</option>
+                <option value="INDIA">+355</option>
+                <option value="USA">+213</option>
+                <option value="NEW">+1 684</option>
+                <option value="INDIA">+376</option>
+                <option value="USA">+244</option>
+                <option value="NEW">+1 264</option>
+                <option value="NEW">+672</option>
+
+            </select>
+            <input type="number" placeholder="Phone number" id="signupPhone">
+            </div>
+            <br>
+            <input type="text"  id="signupName" placeholder="Name">
+            <br>
+            <input type="email" id="signupEmail" placeholder="Email Address">
+            <br>
+            <!-- <button:submit >CREATE ACCOUNT</button:submit> -->
+            <!-- <button type="submit"  id ="signupButton" >CREATE ACCOUNT</button> -->
+            <input type="submit" id ="signupButton" value="CREATE ACCOUNT">
+            <p id="signupTermCondition">By creating an account, I accept the <a href="">Terms & Conditions</a></p>
+    
+            <p id="signupAlready">Already have an account? <a href="./login.html">Log in</a></p>
+        </form>
+
+    </div>
+</body>
+</html>
+
+<script src="./scripts/sign-up.js"></script>
+
+
+

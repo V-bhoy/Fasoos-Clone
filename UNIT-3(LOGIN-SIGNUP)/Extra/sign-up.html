@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Sign-Up</title>
+   <style>
+        #form{
+        width: 38%;
+        height: 600px;
+        margin: auto;
+        border: 2px solid black;
+        background-color: #ffffff;
+    }
+    #formMain{
+        margin: auto;
+        /* background-color: #fedd02; */
+        /* width: 300px; */
+    }
+   #signupName,#signupEmail,#signupButton,#signupPhone,#signupTermCondition,#signupAlready{
+    width: 500px;
+    height: 50px;
+    /* margin: auto; */
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+    }
+    #signupButton{
+        background-color: 
+#fedd02;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #signupPhone{
+     width: 430px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    }
+    #signupCountries{
+        width: 50px;
+        height: 55px;
+
+    }
+    #signupCountryCode{
+        display: flex;
+        gap: 20px;
+        width: 520px;
+    }
+    #signupAlready{
+        text-align: center;
+        font-size: 15px;
+    }
+    
+   </style>
+</head>
+<body>
+    <div id="form">
+        <div id="formMain">
+            <h1>Sign Up</h1>
+            <p>Create a account with new phone number</p>
+            <div id="signupCountryCode">
+            <select id="signupCountries" name="countries"></select>
+            <input type="number" placeholder="Phone number" id="signupPhone">
+            </div>
+            <br>
+            <input type="text"  id="signupName" placeholder="Name">
+            <br>
+            <input type="email" id="signupEmail" placeholder="Email">
+            <br>
+            <button id="signupButton">CREATE ACCOUNT</button>
+            <p id="signupTermCondition">By creating an account, I accept the <a href="">Terms & Conditions</a></p>
+    
+            <p id="signupAlready">Already have an account? <a href="./login.html">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
