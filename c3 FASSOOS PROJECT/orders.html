@@ -32,15 +32,11 @@
         height: 100%;
         width: 50%;
       }
-      logodiv {
-        width: 20%;
-        overflow: hidden;
-        box-sizing: border-box;
-      }
+
       #logodiv > img {
-        height: 70px;
-        width: 70px;
-        padding-left: 150px;
+        /* height: 70px;
+        width: 70px; */
+        padding-left: 230px;
         padding-top: 50px;
       }
       #profile_details {
@@ -86,6 +82,20 @@
         text-decoration: none;
         color: rgb(80, 87, 87);
       }
+      #profile_details_data {
+        display: grid;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+      }
+      #btn {
+        color: black;
+        background-color: yellow;
+        border-radius: 7px;
+        height: 35px;
+        width: 90px;
+      }
     </style>
   </head>
   <body>
@@ -93,7 +103,7 @@
     <div id="profile_details_container">
       <div id="middle">
         <div id="logodiv">
-          <img src="./pics/logodivimp.png" alt="logo" />
+          <img src="./pics/logodivimp.jpeg" alt="logo" />
         </div>
         <div id="profile_details">
           <h3>ankit</h3>
@@ -114,5 +124,21 @@
       <div id="line3"></div>
       <div id="line4"></div>
     </div>
+    <div id="profile_details_data">
+      <div>
+        <img src="./pics/pilate.jpeg" alt="" />
+      </div>
+      <div>
+        <h3>Looks bland, add some deliciousness</h3>
+      </div>
+      <div>
+        <button id="btn" onclick="mainpagego()">order now</button>
+      </div>
+    </div>
   </body>
 </html>
+<script>
+  function mainpagego() {
+    window.location.href = "../menu.html";
+  }
+</script>
