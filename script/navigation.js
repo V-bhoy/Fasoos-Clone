@@ -41,5 +41,5 @@ bars.addEventListener("click",function(){
     }
 })
 logout.addEventListener("click",function(){
-   window.location.href="index.html";
+   window.location.href="menu.html";
 })

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/details.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-index"></div>
+    <div id="container">
+    
+        
+            
+       
+    </div>
+    <footer id="main-footer"></footer>
+</body>
+
+</html>
+<script src="./script/details.js"></script>
+<script src="./script/header.js"></script>
+<script src="./script/navigation.js"></script>
+<script type="module">
+    import footer from "./components/comp.js";
+    let footer_div=document.querySelector("#main-footer");
+    footer_div.innerHTML=footer();
+</script>
