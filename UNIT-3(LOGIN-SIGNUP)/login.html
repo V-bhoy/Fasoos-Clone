@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <div id="main">
+        <form id="form">
+            <h1>Login</h1>
+            <p>Enter your phone number to continue</p>
+            <div id="loginCountryCode">
+            <select id="loginCountries" name="countries">
+                <option value="INDIA">+91</option>
+                <option value="USA">+973</option>
+                <option value="NEW">+93</option>
+                <option value="INDIA">+355</option>
+                <option value="USA">+213</option>
+                <option value="NEW">+1 684</option>
+                <option value="INDIA">+376</option>
+                <option value="USA">+244</option>
+                <option value="NEW">+1 264</option>
+                <option value="NEW">+672</option>
+            </select>
+            <input type="number" placeholder="Phone number" id="loginPhone">
+            </div>
+            <br>
+            <!-- <button id="loginButton">CONTINUE</button> -->
+            <input type="submit" id="loginButton" value="CONTINUE">
+            <p id="loginAlready">Don’t have an account? <a href="./sign-up.html">Sign up </a></p>
+        </form>
+
+    </div>
+</body>
+</html>
+
+<script src="./scripts/login.js"></script>
