@@ -344,7 +344,7 @@
    var local=JSON.parse(localStorage.getItem("cartItems"))
    console.log(local)
    var name=document.getElementById("pname").innerText=local[0].name
-   var pr=document.getElementById("qtyprice").innerText=local[0].price
+   var pr=document.getElementById("qtyprice").innerText=local[0].price;
    document.getElementById("amount").innerText=local[0].price
    document.getElementById("totalmoney").innerText=pr+50
 
@@ -359,6 +359,7 @@
     
       bag= bag + 1
       var qty=document.getElementById("qty").innerText = bag
+      document.getElementById("qtyprice").innerText.innerText=bag+local[0].price
       document.getElementById("amount").innerText=local[0].price*bag
       document.getElementById("totalmoney").innerText=(pr*bag)+50
       console.log("bagww",bag)

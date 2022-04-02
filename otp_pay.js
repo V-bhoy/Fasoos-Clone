@@ -22,7 +22,8 @@ let h1 = document.getElementById('count');
         let otp = document.querySelector("#otp").value ;
         //console.log(otp)
         if(otp=="123456"){
-            alert("Order Successfully Place")
+            alert("Order Successfully Place");
+            localStorage.removeItem("cartItems");
             window.location.href="./menu.html"
         }
         else{

@@ -66,3 +66,25 @@ logout.addEventListener("click",function(){
    
     window.location.href="menu.html";
 })
+
+//---------------------------
+
+let prof=document.querySelector("#prof");
+let orde=document.querySelector("#orde");
+let paym=document.querySelector("#paym");
+let addr=document.querySelector("#addr");
+
+prof.addEventListener("click",function(){
+    window.location.href="./c3 FASSOOS PROJECT/profile.html";
+})
+orde.addEventListener("click",function(){
+    window.location.href="./c3 FASSOOS PROJECT/orders.html";
+})
+paym.addEventListener("click",function(){
+    window.location.href="./c3 FASSOOS PROJECT/payments.html";
+})
+addr.addEventListener("click",function(){
+    window.location.href="./c3 FASSOOS PROJECT/addresses.html";
+})
+
+

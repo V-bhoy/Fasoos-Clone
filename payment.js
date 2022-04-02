@@ -94,7 +94,7 @@ document.querySelector("#option").addEventListener("submit",pay);
 
         if(card.length==16 & cvv.length==3 ){
             alert("OTP SEND SUCCESSFULY.")
-            window.location.href = "otp.html"
+            window.location.href = "otp_pay.html"
             //console.log("yes")
         }
         else{
