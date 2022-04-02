@@ -1,6 +1,7 @@
-let signupArr= JSON.parse(localStorage.getItem("signupInform")) || [];
-
-document.querySelector("#form").addEventListener("submit",loginData);
+let signup_Arr= JSON.parse(localStorage.getItem("signupInform")) || [];
+let mainotp=document.querySelector("#main-otp");
+let mainlogin=document.querySelector("#main-login");
+document.querySelector("#login-form").addEventListener("submit",loginData);
 
     function loginData(event)
     {
@@ -10,14 +11,18 @@ document.querySelector("#form").addEventListener("submit",loginData);
     
  
         let flag = false;
-        console.log(signupArr);
-       for(let i=0; i<signupArr.length; i++)
+        console.log(signup_Arr);
+       for(let i=0; i<signup_Arr.length; i++)
        {
         // console.log("aaaaaaaa");
         //    console.log(signupArr[i].signupPhone);
-           if(signupArr[i].signupPhone == Phone )
+           if(signup_Arr[i].signupPhone == Phone )
            {
             flag = true;
+            let phone_num=Phone;
+            let user=signup_Arr[i].signupName;
+            localStorage.setItem("user",user);
+            localStorage.setItem("phone",phone_num);
             console.log("aaaaaaaa");
            }
        }
@@ -25,7 +30,8 @@ document.querySelector("#form").addEventListener("submit",loginData);
        {
            if(flag == true )
            {
-            window.location.href = "otp.html";
+              mainlogin.style.display="none";
+              mainotp.style.display="block";
            }
            else{
                alert("Enter correct No")
@@ -39,7 +45,11 @@ document.querySelector("#form").addEventListener("submit",loginData);
        }
     }
    
-
+//    window.addEventListener("mouseup",function(event){
+//        if(event.target!=mainotp && event.target.parentNode!=mainotp){
+//            mainotp.style.display="none";
+//        }
+//    })
 
 /* <script>
     var matchUserData = JSON.parse(localStorage.getItem("signUpDetails"));

@@ -1,30 +1,27 @@
-let signupArr= JSON.parse(localStorage.getItem("signupInform")) || [];
-
+let main_otp=document.querySelector("#main-otp");
 let otpNumber = document.querySelector("#OTPnumber");
-let div = document.createElement("p");
-// div.setAttribute("id","otpDiv");
-div.style.marginTop = "0px"
-for(let i=0; i<signupArr.length; i++)
-{
-    div.innerText = signupArr[i].signupPhone;
-console.log(div);
-}
-otpNumber.append(div);
-document.querySelector("#form").addEventListener("submit",otpVerification);
+let n=document.querySelector("#username");
+let user_n=localStorage.getItem("user");
+let phon=localStorage.getItem("phone");
+otpNumber.innerText=phon;
+let otpform=document.querySelector("#otpform");
+console.log(otpform);
 
-function otpVerification(event)
-{
-    // console.log("hiiiiiiiiiii");
+otpform.addEventListener("submit",function(event){
     event.preventDefault();
-    otpNumber = signupArr.signupPhone;
-    console.log(signupArr.signupPhone);
+  
     let loginOTP = document.querySelector("#loginOTP").value;
     console.log("loginOTP");
     if(loginOTP == "824125")
     {
-        window.location.href = "sign-up.html";
+        main_otp.style.display="none";
+        let res=n.innerText.replace(n.innerText,`Hi ${user_n}`);
+        n.innerText=res;
+        alert("Logged in successfully!");
     }
     else{
+        n.innerText="Login";
         alert("Wrong OTP");
     }
-}
+});
+

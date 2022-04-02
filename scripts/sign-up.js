@@ -2,7 +2,7 @@
 document.querySelector("#form").addEventListener("submit",(e)=>{
     signUpData(e);
 }) 
-let signupArr= JSON.parse(localStorage.getItem("signupInform")) || [];
+let signuparr= JSON.parse(localStorage.getItem("signupInform")) || [];
 // console.log("1");
 
 function signUpData (event){
@@ -24,7 +24,7 @@ function signUpData (event){
         signupName : signUpName
     };
    
-    signupArr.push(signUpObj);
-    console.log(signupArr)
-    localStorage.setItem("signupInform",JSON.stringify(signupArr));
+    signuparr.push(signUpObj);
+    console.log(signuparr)
+    localStorage.setItem("signupInform",JSON.stringify(signuparr));
 }
