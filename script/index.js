@@ -24,11 +24,3 @@ signup.addEventListener("click",function(){
 login.addEventListener("click",function(){
     page1.style.display="block";
 })
-window.addEventListener("mouseup",function(event){
-    if(event.target!=page && event.target.parentNode!=page){
-        page.style.display="none";
-    }
-    if(event.target!=page1 && event.target.parentNode!=page1){
-        page1.style.display="none";
-    }
-})
