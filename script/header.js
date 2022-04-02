@@ -16,7 +16,7 @@ header.innerHTML=`  <div id="sidebar">
         <img src="https://assets.faasos.io/faasos_v2/faasosLogoPurple.svg" alt="logo" />
     </div>
     <div id="locate">
-        <p style="display: inline;">Ravet FC</p>
+        <p style="display: inline;"></p>
         <i class="fa fa-angle-down"></i>
     </div>
 </div>

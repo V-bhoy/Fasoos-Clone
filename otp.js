@@ -23,7 +23,7 @@ let h1 = document.getElementById('count');
         //console.log(otp)
         if(otp=="123456"){
             alert("Order Successfully Place")
-            window.location.href="payment.html"
+            window.location.href="./menu.html"
         }
         else{
             alert("Plese Enter correct OTP.")

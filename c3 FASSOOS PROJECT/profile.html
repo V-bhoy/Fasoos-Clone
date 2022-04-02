@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/navigation.css">
     <title>PROFILE DETAILS</title>
     <style>
       body {
@@ -32,10 +35,10 @@
         height: 100%;
         width: 50%;
       }
-      #logodiv {
-        width: 20%;
+      #logodiv1 {
+        width: 40%;
       }
-      #logodiv > img {
+      #logodiv1 > img {
         height: 80px;
         width: 80px;
         padding-left: 220px;
@@ -120,17 +123,21 @@
       p {
         color: rgb(102, 102, 102);
       }
-      a {
-        text-decoration: none;
-        color: rgb(80, 87, 87);
+      #profile_details>p,h3{
+        margin-top: 20px;
+      }
+      #inner_profile>div>p,h4{
+        margin-top: 20px;
+
       }
     </style>
   </head>
   <body>
+    <div id="main-index">
     <div id="navbar_container"></div>
     <div id="profile_details_container">
       <div id="middle">
-        <div id="logodiv">
+        <div id="logodiv1">
           <img src="./pics/logodivimp.png" alt="logo" />
         </div>
         <div id="profile_details">
@@ -175,7 +182,20 @@
       </div>
     </div>
 
-    <div id="footer_container"></div>
+    <div id="main-footer"></div>
   </body>
 </html>
-<script type="module"></script>
+<script src="../script/header.js">
+
+
+</script>
+<script src="../script/navigation.js">
+
+</script>
+<script type="module">
+  import footer from "../components/comp.js"
+  let foot = document.getElementById("main-footer")
+  foot.innerHTML = footer()
+
+
+</script>

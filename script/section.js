@@ -9,6 +9,9 @@ let empty=document.querySelector("#empty");
 let data=document.querySelector("#data");
 let total=document.querySelector("#total");
 let cart=JSON.parse(localStorage.getItem("cartItems"))
+let string=localStorage.getItem("location");
+let bag=document.querySelector("#loop-hole");
+bag.innerText=string;
 let wraps=[{
     name:"Smokey Fab Combo (Veg)",
     price:198,

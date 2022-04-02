@@ -2,6 +2,9 @@ let closetag=document.querySelector("#close");
 let bars=document.querySelector("#bars");
 let user=document.querySelector("#username");
 let logout=document.querySelector("#lout");
+let loop=document.querySelector("#locate>p");
+let str=localStorage.getItem("location");
+loop.innerText=str;
 user.addEventListener("click",function(){
     let res=user.innerText.replace(user.innerText,"vaishu");
     user.innerText=res;
