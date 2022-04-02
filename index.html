@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/333ad22e58.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #mother{
+        /* border: 2px solid black; */
+        width: 65%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #m01{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    #m02{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        text-align: center;
+        margin-top: -20px;
+    }
+    #child01{
+        /* border: 2px solid black; */
+        height: 400px;
+        width: 100%;
+        display: flex;
+    }
+    #child01>div:nth-child(1){
+        /* border: 2px solid blue; */
+        height: 70%;
+        width: 100px;
+        margin-top: 60px;
+    }
+    #child01>div:nth-child(1)>img{
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    #child01>div:nth-child(2){
+        /* border: 2px solid black; */
+        height: 80%;
+        width: 45%;
+        margin-top: 35px;
+    }
+    .leftpoints{
+        font-weight: bold;
+        display: flex;
+        white-space: pre-line;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #child01>div:nth-child(2)>span{
+        display: flex;
+        white-space: pre;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    #child01>div:nth-child(2)>span:nth-child(1){
+        margin-top: 40px;
+    }
+    #child01>div:nth-child(2)>span:nth-child(2){
+        margin-top: 55px;
+    }
+    #child01>div:nth-child(2)>span:nth-child(3){
+        margin-top: 60px;
+    }
+    #child01>div:nth-child(3){
+        height: 58%;
+        width: 42%;
+        /* border: 2px solid black; */
+        border-radius: 8px;
+        margin: auto;
+    }
+    #child01>div:nth-child(3)>iframe{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    #father{
+        height: 650px;
+        width: 100%;
+        /* border: 2px solid black; */
+        display: flex;
+    }
+    #son01{
+        height: 550px;
+        width: 850px;
+        /* border: 2px solid black; */
+        position: relative;
+    }
+    #son01>img:nth-child(1){
+        height: 100%;
+        width: 100%;
+    }
+    #son01>img:nth-child(2){
+        height: 90px;
+        width: 140px;
+        position: absolute;
+        left: 95px;
+        top: 75px;
+    }
+    #son02{
+        /* position: relative; */
+        height: 620px;
+        width: 645px;
+        /* border: 2px solid black; */
+        border-bottom-left-radius: 20px;
+    }
+    #son0101{
+        position: absolute;
+        top: 100px;
+        left: 600px;
+        font-weight: bold;
+        color: RGB(255, 211, 68);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        background-color: transparent;
+        border: transparent;
+    }
+    #son0102{
+        position: absolute;
+        top: 93px;
+        left: 670px;
+        font-weight: bold;
+        color: RGB(255, 211, 68);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        background-color: transparent;
+        border: 1px solid RGB(255, 211, 68);
+        border-radius: 4px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 0 0 4px rgba(0,0,0,1);
+    }
+    #son01>p{
+        position: absolute;
+        top: 190px;
+        left: 100px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    #son02>img{
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        /* position: relative; */
+    }
+    #ipt{
+        position: absolute;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        border: transparent;
+        background-color: white;
+        border-radius: 7px;
+        box-shadow: 0 0 2px rgba(0,0,0,1);
+        left: 100px;
+        top: 300px;
+    }
+    #ipt>input{
+        height: 90%;
+        width: 75%;
+        border: transparent;
+        border-radius: 7px;
+        font-size: 16px;
+        white-space: pre;
+    }
+    #ipt>button:nth-child(2){
+        background-color: transparent;
+        border: transparent;
+        width: 110px;
+        font-size: 14px;
+        color: grey;
+    }
+    #ipt>button:nth-child(3){
+        width: 110px;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-weight: 550; */
+        font-size: 15px;
+        background-color: RGB(252, 193, 61);
+        border: RGB(252, 193, 61);
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        margin-left: 4px;
+    }
+    #chacha{
+        position: relative;
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        border: 2px solid black;
+        background-color: RGB(87, 64, 154);
+    }
+    #chachaKaBacha{
+        position: absolute;
+        height: 110px;
+        width: 75%;
+        /* border: 2px solid black; */
+        left: 200px;
+        top: -60px;
+        border-radius: 8px;
+        background-color: RGB(106, 85, 204);
+    }
+    #chachaKaBacha>img{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    #chacha>p{
+        text-align: center;
+        margin-top: 90px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: RGB(252, 193, 61);
+        white-space: normal;
+    }
+</style>
+<body>
+    <div id="father">
+        <div id="son01">
+            <img src="https://assets.faasos.io/faasos_v2/brandPattern.png" alt="background img">
+            <img src="https://assets.faasos.io/faasos_v2/faasosLogoBrand.svg" alt="company's logo">
+            <button id="son0101">Login</button>
+            <button id="son0102">Sign Up</button>
+            <p>Surprises under wraps</p>
+            <div id="ipt">
+                <input type="text" placeholder="    Enter your delivery Location">
+                <button><i class="fa-solid fa-location-crosshairs"></i> Locate me</button>
+                <button>FIND FOOD</button>
+            </div>
+        </div>
+        <div id="son02">
+            <img src="https://assets.faasos.io/faasos_v2/faasos-hero-banner.jpg" alt="backgroung img 02">
+        </div>
+    </div>
+    <div id="mother">
+        <p id="m01">Eat Good, Eat Safe. Always! Now with the EatSure promise.</p>
+        <p id="m02">To keep your food safe and hygienic, here are some proactive steps that we have been taking.</p>
+        <div id="child01">
+            <div>
+                <img src="./images/iconimage01.png" alt="1st img"><img src="/images/iconimage02.png" alt="2nd img"><img src="./images/iconimage03.png" alt="3rd img">
+            </div>
+            <div>
+                <span><p class="leftpoints" >Real-time Temperature </p><p> Tracking of the kitchen and delivery staff</p></span>
+                <span class="leftpoints">Contactess Delivery</span>
+                <span><p class="leftpoints">Regular health</p><p> check-ups for all the staff members</p></span>
+            </div>
+            <div>
+                <iframe src="https://youtube.com/embed/SBGKA87fmCM" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="chacha">
+        <div id="chachaKaBacha">
+            <img src="./images/bb01.png" alt="">
+        </div>
+        <p>Here are some additional measures which our kitchen teams are rigorously following!</p>
+    </div>
+</body>
+</html>
