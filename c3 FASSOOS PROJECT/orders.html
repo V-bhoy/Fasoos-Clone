@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order detail</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      #profile_details_container {
+        background-color: #e9cb00;
+        /* border: 1px solid red; */
+        height: 200px;
+        width: 100%;
+        margin-top: 70px;
+      }
+      #middle {
+        height: 100%;
+        width: 50%;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        display: flex;
+        box-sizing: border-box;
+      }
+      #middle > div {
+        /* border: 1px solid teal; */
+
+        height: 100%;
+        width: 50%;
+      }
+      logodiv {
+        width: 20%;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      #logodiv > img {
+        height: 70px;
+        width: 70px;
+        padding-left: 150px;
+        padding-top: 50px;
+      }
+      #profile_details {
+        line-height: 1px;
+        text-align: left;
+        padding-top: 50px;
+        font-size: 14px;
+      }
+      #tab_container {
+        /* border: 1px solid black; */
+        height: 40px;
+      }
+      p {
+        color: rgb(97, 96, 96);
+      }
+      #tab_container {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+      }
+      #tab_container > div {
+        margin: auto;
+        /* border: 1px solid black; */
+        font-size: 14px;
+        color: rgb(82, 82, 82);
+      }
+      #line {
+        height: 3px;
+        margin: auto;
+        /* border: 1px solid black; */
+        width: 80%;
+        display: flex;
+        /* background-color: blue; */
+      }
+      #line > div {
+        width: 25%;
+      }
+      #line3 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar_container"></div>
+    <div id="profile_details_container">
+      <div id="middle">
+        <div id="logodiv">
+          <img src="./pics/logodivimp.png" alt="logo" />
+        </div>
+        <div id="profile_details">
+          <h3>ankit</h3>
+          <p>9984746267</p>
+          <p>overchatak@gamil.com</p>
+        </div>
+      </div>
+    </div>
+    <div id="tab_container">
+      <div><a href="./profile.html">Profile</a></div>
+      <div><a href="./payments.html">Payment</a></div>
+      <div><a href="./orders.html">Orders</a></div>
+      <div><a href="./addresses.html">Addresses</a></div>
+    </div>
+    <div id="line">
+      <div id="line1"></div>
+      <div id="line2"></div>
+      <div id="line3"></div>
+      <div id="line4"></div>
+    </div>
+  </body>
+</html>
