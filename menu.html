@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navigation.css">
+    <link rel="stylesheet" href="./style/section.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Document</title>
+    
+</head>
+<body >
+    <div id="main-index"></div>
+    <section style=" background-color: rgba(218, 216, 216,0.2); ">
+        <div id="slide">
+            <div><img src="https://product-assets.faasos.io/production/product/image_1647515512316_CF-%20Banner.jpg" alt=""></div>
+            <div><img src="https://product-assets.faasos.io/production/product/image_1618561895209_Faasos%20Chinese%20wraps_website%20banner%20%281%29.jpg" alt=""></div>
+            <div><img src="https://product-assets.faasos.io/production/product/image_1620280380694_Banner%201%20%281%29.jpg" alt=""></div>
+            <div><img src="https://product-assets.faasos.io/production/product/image_1620280934986_Faasos%20Combo_3%20May_Signature%20Wraps%20%281%29%20%281%29.jpg" alt=""></div>
+            <div><img src="https://product-assets.faasos.io/production/product/image_1620280991048_Faasos%20Combo_3%20May_Classic%20Wraps%20%281%29.jpg" alt=""></div>
+        </div>
+        <div id="tabs">
+            <div>
+                <h1>Order Food Online in Ravet FC</h1>
+            </div>
+            <div>
+                <input id="search_bar" type="search" style=" margin-right: 10px;" placeholder= "🔍 &nbsp; Search for wraps">
+                <div><input type="checkbox" id="nonveg" > Non-Veg Only</div>
+                <div><input type="checkbox" id="veg"> Veg Only</div>
+            </div>
+        </div>
+        <div id="menu-list">
+            <div id="menubar">
+                <div>Fab Wraps starting at 99 each</div>
+                <div>Thandai Gujiya Meals by LunchBox</div>
+                <div>Breakfast & Evening Wrap Meals (Save Upto 20%)</div>
+                <div>Chefs Special Wraps</div>
+                <div>Super Saver Wrap Deals (Save Upto 40%)</div>
+                <div>Pocket Friendly Rolls</div>
+                <div>Classic Wraps</div>
+                <div>Signature Wraps</div>
+                <div>Match Day Wrap Meals for 1 (Upto 15% OFF)</div>
+                <div>Match Day Wrap Meals for 2 & 4 (Upto 25% OFF)</div>
+                <div>Wrap Meals for Kids</div>
+                <div>Rice Bowls</div>
+                <div>Sides And Beverages</div>
+                <div>Desserts</div>
+            </div>
+            <div id="food-grid">
+                <h1 id="wrap-head">Fab Wraps starting at 99 each</h1>
+                <div class="items">
+                    
+                </div>
+                <h1 id="chef-head">Chefs Special Wraps</h1>
+                <div id="special">
+
+                </div>
+                <h1 id="roll-head">Pocket Friendly Rolls</h1>
+                <div id="rolls">
+
+                </div>
+                <h1 id="rice-head">Rice Bowls</h1>
+                <div id="rice"></div>
+          
+                <h1 id="drinks-head">Sides & Beverages</h1>
+                <div id="drinks">
+                    
+                </div>
+                <h1 id="cake-head">Desserts</h1>
+                <div id="desserts">
+                    
+                </div>
+            </div>
+            <div id="cartbox">
+                <div id="empty">
+                    <h1>Empty Cart</h1>
+                    <div><img src="./images/empty.png" alt=""></div>
+                </div>
+                <div id="check" style="display: none;">
+                    <p style="display:inline;">Cart</p><span id="item"></span>
+                    <div id="data" style=" margin-top: 20px; margin-bottom: 30px;"> 
+                      
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+                        <div style="line-height: 1.2;">
+                            <p style="font-size:20px; font-weight:600">SubTotal</p>
+                            <p style="font-size: 12px; color: rgb(126,126,126); letter-spacing: 0.8px;">Extra charges may apply</p>
+                        </div>
+                        <div id="total"></div>
+                    </div>
+                    <button id="out">CHECKOUT</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <footer id="main-footer">
+         
+    </footer>
+</body>
+
+</html>
+<script src="./script/section.js"></script>
+<script src="./script/header.js"></script>
+<script src="./script/navigation.js"></script>
+<script type="module">
+    import footer from "./components/comp.js";
+    import  {showData01,showData02,showData11,showData12,showData21,showData22,showData31,showData32,showData41,showData42,showData51,showData52} from "./script/tabs.js";
+    let footer_div=document.querySelector("#main-footer");
+    footer_div.innerHTML=footer();
+
+
+    let items=document.querySelector(".items");
+    let special=document.querySelector("#special");
+    let pocket=document.querySelector("#rolls");
+    let bowl=document.querySelector("#rice");
+    let drinks=document.querySelector("#drinks");
+    let dessert=document.querySelector("#desserts");
+
+    let head1=document.querySelector("#wrap-head");
+    let head2=document.querySelector("#chef-head");
+    let head3=document.querySelector("#roll-head");
+    let head4=document.querySelector("#rice-head");
+    let head5=document.querySelector("#drinks-head");
+    let head6=document.querySelector("#cake-head");
+
+    let search=document.querySelector("#search_bar");
+    search.addEventListener("search",function(){
+        let word=search.value;
+        if(word=="wraps"){
+            head2.style.display="none";
+            special.style.display="none";
+            head3.style.display="none";
+            pocket.style.display="none";
+            head4.style.display="none";
+            bowl.style.display="none";
+            head5.style.display="none";
+            drinks.style.display="none";
+            head6.style.display="none";
+            dessert.style.display="none";
+        }
+        else if(word=="chef special"){
+            head1.style.display="none";
+            items.style.display="none";
+            head3.style.display="none";
+            pocket.style.display="none";
+            head4.style.display="none";
+            bowl.style.display="none";
+            head5.style.display="none";
+            drinks.style.display="none";
+            head6.style.display="none";
+            dessert.style.display="none";
+        }
+        else if(word=="rolls"){
+            head2.style.display="none";
+            special.style.display="none";
+            head1.style.display="none";
+            items.style.display="none";
+            head4.style.display="none";
+            bowl.style.display="none";
+            head5.style.display="none";
+            drinks.style.display="none";
+            head6.style.display="none";
+            dessert.style.display="none";
+        }
+        else if(word=="rice"){
+            head2.style.display="none";
+            special.style.display="none";
+            head1.style.display="none";
+            items.style.display="none";
+            head3.style.display="none";
+            pocket.style.display="none";
+            head5.style.display="none";
+            drinks.style.display="none";
+            head6.style.display="none";
+            dessert.style.display="none";
+        }
+        else if(word=="drinks"){
+            head2.style.display="none";
+            special.style.display="none";
+            head1.style.display="none";
+            items.style.display="none";
+            head4.style.display="none";
+            bowl.style.display="none";
+            head3.style.display="none";
+            pocket.style.display="none";
+            head6.style.display="none";
+            dessert.style.display="none";
+        }
+        else if(word=="cake"){
+            head2.style.display="none";
+            special.style.display="none";
+            head1.style.display="none";
+            items.style.display="none";
+            head4.style.display="none";
+            bowl.style.display="none";
+            head5.style.display="none";
+            drinks.style.display="none";
+            head3.style.display="none";
+            pocket.style.display="none";
+        }
+        else{
+            window.location.href="menu.html"
+
+        }
+    })
+   
+    
+     let nonveg=document.querySelector("#nonveg");
+     let veg=document.querySelector("#veg");
+    
+    nonveg.addEventListener("click",function(){
+        if(nonveg.checked==true){
+           showData01();
+           showData11();
+           showData21();
+           showData31();
+           showData41();
+           showData51();
+        }
+        else
+        {
+            window.location.href="menu.html"
+        }
+    });
+
+    veg.addEventListener("click",function(){
+        if(veg.checked==true){
+           showData02();
+           showData12();
+           showData22();
+           showData32();
+           showData42();
+           showData52();
+        }
+        else
+        {
+            window.location.href="menu.html"
+        }
+    });
+    
+ 
+        
+</script>
