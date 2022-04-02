@@ -12,8 +12,27 @@
     <script src="https://kit.fontawesome.com/333ad22e58.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="main-otp" style="display: none; position: absolute; ">
+        <form id="otpform">
+            <h1>Verify Details</h1>
+           <div id="OTPverification">
+            <p>OTP sent to </p>
+            <p id="OTPnumber"></p>
+           </div>
+            <br>
+            <input type="text"  id="loginOTP" placeholder="Enter OTP">
+            <br>
+            <p id="sentOTP">OTP has been sent successfully</p>
+            <p id="resendOTP">Resend OTP</p>
+            <!-- <button id="OTPbutton">VERIFY</button> -->
+            <input type="submit" value="VERIFY" id="OTPbutton">
+            <!-- <input type="submit" id="loginButton" value="CONTINUE"> -->
+
+        </form>
+
+    </div>
     <div id="main-login" style="display: none; position: absolute;">
-        <form id="form">
+        <form id="login-form">
             <h1>Login</h1>
             <p>Enter your phone number to continue</p>
             <div id="loginCountryCode">

@@ -10,12 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/login.css">
     <link rel="stylesheet" href="./styles/sign-up.css">
+    <link rel="stylesheet" href="./styles/otp.css">
     <title>Document</title>
     
 </head>
 <body >
+    <div id="main-otp" style="display: none; position: absolute; top: 100px;">
+        <form id="otpform">
+            <h1>Verify Details</h1>
+           <div id="OTPverification">
+            <p>OTP sent to </p>
+            <p id="OTPnumber"></p>
+           </div>
+            <br>
+            <input type="text"  id="loginOTP" placeholder="Enter OTP">
+            <br>
+            <p id="sentOTP">OTP has been sent successfully</p>
+            <p id="resendOTP">Resend OTP</p>
+            <!-- <button id="OTPbutton">VERIFY</button> -->
+            <input type="submit" value="VERIFY" id="OTPbutton">
+            <!-- <input type="submit" id="loginButton" value="CONTINUE"> -->
+
+        </form>
+
+    </div>
+
     <div id="main-login" style="display: none; position: absolute; top: 100px;">
-        <form id="form">
+        <form id="login-form">
             <h1>Login</h1>
             <p>Enter your phone number to continue</p>
             <div id="loginCountryCode">
@@ -166,17 +187,22 @@
 </body>
 
 </html>
-<script src="./scripts/login.js"></script>
-<script src="./scripts/sign-up.js"></script>
+
 <script src="./script/section.js"></script>
 <script src="./script/header.js"></script>
 <script src="./script/navigation.js"></script>
+<script src="./scripts/sign-up.js"></script>
+
+<script src="./scripts/login.js"></script>
+<script src="./scripts/otp.js"></script>
 <script type="module">
     import footer from "./components/comp.js";
     import  {showData01,showData02,showData11,showData12,showData21,showData22,showData31,showData32,showData41,showData42,showData51,showData52} from "./script/tabs.js";
+    import   {origData01,origData02,origData03,origData04,origData05,origData06} from "./script/unchecked.js";
     let footer_div=document.querySelector("#main-footer");
     footer_div.innerHTML=footer();
-
+    
+    let menu=document.querySelector("#menu-list");
 
     let items=document.querySelector(".items");
     let special=document.querySelector("#special");
@@ -268,8 +294,18 @@
             pocket.style.display="none";
         }
         else{
-            window.location.href="menu.html"
-
+            head1.style.display="block";
+            items.style.display="grid";
+            head2.style.display="block";
+            special.style.display="grid";
+            head3.style.display="block";
+            pocket.style.display="grid";
+            head4.style.display="block";
+            bowl.style.display="grid";
+            head5.style.display="block";
+            drinks.style.display="grid";
+            head6.style.display="block";
+            dessert.style.display="grid";
         }
     })
    
@@ -288,7 +324,12 @@
         }
         else
         {
-            window.location.href="menu.html"
+            origData01();
+            origData02();
+            origData03();
+            origData04();
+            origData05();
+            origData06();
         }
     });
 
@@ -303,7 +344,12 @@
         }
         else
         {
-            window.location.href="menu.html"
+            origData01();
+            origData02();
+            origData03();
+            origData04();
+            origData05();
+            origData06();
         }
     });
     

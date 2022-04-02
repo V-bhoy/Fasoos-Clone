@@ -8,24 +8,22 @@ let page=document.querySelector("#main-login");
 let page1=document.querySelector("#main");
 let sign=document.querySelector("#sign");
 let log=document.querySelector("#log");
+
 loop.innerText=str;
+
+
 user.addEventListener("click",function(){
     page.style.display="block";
 })
 sign.addEventListener("click",function(){
+    page.style.display="none";
     page1.style.display="block";
 })
 log.addEventListener("click",function(){
+    page1.style.display="none";
     page.style.display="block";
 })
-window.addEventListener("mouseup",function(event){
-    if(event.target!=page && event.target.parentNode!=page){
-        page.style.display="none";
-    }
-    if(event.target!=page1 && event.target.parentNode!=page1){
-        page1.style.display="none";
-    }
-});
+
 // user.addEventListener("click",function(){
 //     let res=user.innerText.replace(user.innerText,"vaishu");
 //     user.innerText=res;
@@ -65,5 +63,6 @@ bars.addEventListener("click",function(){
     }
 })
 logout.addEventListener("click",function(){
-   window.location.href="menu.html";
+   
+    window.location.href="menu.html";
 })
