@@ -23,7 +23,7 @@ header.innerHTML=`  <div id="sidebar">
 <div>
     <div id="user">
         <i class="fa fa-user"></i>
-        <a href="#" id="username">Login</a>
+        <a href="#" id="username">Hi Vaishali</a>
     </div>
     <div id="bars">
         <i class="fa fa-bars"></i>

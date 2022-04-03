@@ -1,7 +1,7 @@
 let main_otp=document.querySelector("#main-otp");
 let otpNumber = document.querySelector("#OTPnumber");
 let n=document.querySelector("#username");
-let user_n=localStorage.getItem("user");
+let user_n=JSON.parse(localStorage.getItem("user"));
 let phon=localStorage.getItem("phone");
 otpNumber.innerText=phon;
 let otpform=document.querySelector("#otpform");
@@ -15,7 +15,7 @@ otpform.addEventListener("submit",function(event){
     if(loginOTP == "824125")
     {
         main_otp.style.display="none";
-        let res=n.innerText.replace(n.innerText,`Hi ${user_n}`);
+        let res=n.innerText.replace(n.innerText,`Hi Vaishali`);
         n.innerText=res;
         alert("Logged in successfully!");
     }

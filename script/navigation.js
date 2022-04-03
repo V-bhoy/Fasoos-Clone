@@ -8,7 +8,7 @@ let page=document.querySelector("#main-login");
 let page1=document.querySelector("#main");
 let sign=document.querySelector("#sign");
 let log=document.querySelector("#log");
-
+let naam=localStorage.getItem("user");
 loop.innerText=str;
 
 
@@ -23,6 +23,9 @@ log.addEventListener("click",function(){
     page1.style.display="none";
     page.style.display="block";
 })
+if(naam==null){
+    user.innerText="Login";
+}
 
 // user.addEventListener("click",function(){
 //     let res=user.innerText.replace(user.innerText,"vaishu");
@@ -63,7 +66,7 @@ bars.addEventListener("click",function(){
     }
 })
 logout.addEventListener("click",function(){
-   
+   localStorage.removeItem("user");
     window.location.href="menu.html";
 })
 
